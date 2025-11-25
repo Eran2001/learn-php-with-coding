@@ -89,3 +89,12 @@ $user = [
 
 echo $user["name"];
 ```
+
+### Functions
+
+```bash
+ function myFunction()
+    {
+        // do something
+    }
+```

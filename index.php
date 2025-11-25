@@ -21,9 +21,10 @@
 <h1>
     <?php
 
-    $user_name = "John";
-
-    echo $user_name;
+    function myFunction()
+    {
+        // do something
+    }
 
     ?>
 </h1>
