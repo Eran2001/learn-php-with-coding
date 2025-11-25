@@ -30,6 +30,7 @@
                 return $value;
             }
         }
+//        return "Nothing to see here";
     }
 
     ?>
@@ -37,7 +38,7 @@
     <p>
         <?php
 
-        $functionCall = myFunction($myArray, "Mary");
+        $functionCall = myFunction($myArray, "d");
         echo $functionCall;
 
         ?>
