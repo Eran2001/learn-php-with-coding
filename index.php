@@ -3,18 +3,22 @@
 $myArray = array("Era", "Mary", "John");
 $myName = $myArray[array_rand($myArray)];
 
-function myFunction($givenArray, $givenName)
+function myFunction($items, $fn): array
 {
-    foreach ($givenArray as $value) {
-        if ($value === $givenName) {
-            return $value;
+    $filteredItems = [];
+    foreach ($items as $item) {
+        if ($fn($item)) {
+            $filteredItems[] = $item;
         }
     }
-    return "Nothing to see here";
+    return $filteredItems;
 }
 
-$fnCall = myFunction($myArray, $myName);
-echo $fnCall;
+$fnCall = myFunction($myArray, function ($item) {
+    return $item == "Era";
+});
+
+print_r($fnCall);
 
 
 
