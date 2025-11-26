@@ -19,6 +19,3 @@ $fnCall = myFunction($myArray, function ($item) {
 });
 
 print_r($fnCall);
-
-
-
