@@ -9,11 +9,11 @@
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-4">
                         <a href="/" aria-current="page"
-                           class="<?php echo $_SERVER["REQUEST_URI"] === "/" ? "bg-gray-950/50" : "hover:bg-white/5 hover:text-white" ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300">Home</a>
+                           class="<?= reqURI("/") ? "bg-gray-950/50" : "hover:bg-white/5 hover:text-white" ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300">Home</a>
                         <a href="/about.php"
-                           class="<?php echo $_SERVER["REQUEST_URI"] === "/about.php" ? "bg-gray-950/50" : "hover:bg-white/5 hover:text-white" ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300">About</a>
+                           class="<?= reqURI("/about.php") ? "bg-gray-950/50" : "hover:bg-white/5 hover:text-white" ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300">About</a>
                         <a href="/contact.php"
-                           class="<?php echo $_SERVER["REQUEST_URI"] === "/contact.php" ? "bg-gray-950/50" : "hover:bg-white/5 hover:text-white" ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 ">Contact</a>
+                           class="<?= reqURI("/contact.php") ? "bg-gray-950/50" : "hover:bg-white/5 hover:text-white" ?> rounded-md px-3 py-2 text-sm font-medium text-gray-300 ">Contact</a>
                     </div>
                 </div>
             </div>
