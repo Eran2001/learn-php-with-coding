@@ -130,3 +130,14 @@ echo $user["name"];
 // PHP is a dynamically typed language, which means the type of a variable can be changed based on the value sent to it
 at runtime.
 This automatic type conversion in PHP is called type juggling.
+
+### Strings
+
+```bash
+  $str = 'this is a simple string';
+  $str = 'This is a \'simple\' string';
+  $str = 'The command C:\\*.* will delete all files.';
+
+  // strlen function - strlen()
+  // strpos function - strpos() Function
+```
