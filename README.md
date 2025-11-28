@@ -104,4 +104,23 @@ echo $user["name"];
 ```bash
  $int_var = 12345; // integer
  $var1 = 1.55; // float or double
+ $bool1 = true; // boolean
+ $string_1 = "This is a string in double quotes"; // string
+```
+
+### Type Casting
+
+```bash
+ $a = 10; // implicit type casting, automatically detecting type when initialize
+ 
+ $a = 9.99;
+ $b = (int)$a; // type casting operator
+ 
+ // type casting functions - intval() floatVal() strVal()
+ $value = "1";
+
+ $intCast = intval($value);
+ echo $intCast;
+
+ echo gettype($intCast);
 ```
