@@ -124,3 +124,9 @@ echo $user["name"];
 
  echo gettype($intCast);
 ```
+
+### Type Juggling
+
+// PHP is a dynamically typed language, which means the type of a variable can be changed based on the value sent to it
+at runtime.
+This automatic type conversion in PHP is called type juggling.
