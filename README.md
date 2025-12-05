@@ -192,3 +192,30 @@ meaning you can access them inside functions or methods without needing to use t
 ```
 
 // We also have built-in functions also, check the docs
+
+### Connect to a Database
+
+// we have 3 ways to connect, using Object Oriented, Procedural or PDO
+
+```bash
+  <?php
+  $servername = "localhost"; // Or your database host
+  $username = "your_username";
+  $password = "your_password";
+  $dbname = "your_database_name";
+
+  // Create connection
+  $conn = new mysqli($servername, $username, $password, $dbname);
+
+  // Check connection
+  if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+  }
+  echo "Connected successfully (MySQLi Object-Oriented)";
+
+  // Close connection
+  $conn->close();
+  ?>
+```
+
+
