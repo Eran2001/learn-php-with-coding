@@ -90,15 +90,6 @@ $user = [
 echo $user["name"];
 ```
 
-### Functions
-
-```bash
- function myFunction()
-    {
-        // do something
-    }
-```
-
 ### Data Types
 
 ```bash
@@ -163,3 +154,41 @@ meaning you can access them inside functions or methods without needing to use t
   $_POST
   $_FILES
 ```
+
+### Enabling Strict Types
+
+```bash
+  <?php declare(strict_types=1);
+
+  function sum(int $a, int $b): int {
+      return $a + $b;
+  }
+
+  // This will work
+  echo sum(5, 10); // Output: 15
+
+  // This will throw a TypeError in strict mode
+  // echo sum(5, "10"); 
+  ?>
+```
+
+### Functions
+
+// A function is a reusable block of code that performs a specific task.
+
+```bash
+  // function with params
+  function greet($name) {
+     echo "Hello, $name!";
+  }
+
+  // function with default params
+  function welcome($name = "Guest") {
+     echo "Welcome, $name!";
+  }
+
+  welcome();              // Welcome, Guest!
+  welcome("Eran");        // Welcome, Eran!
+```
+
+// We also have built-in functions also, check the docs
