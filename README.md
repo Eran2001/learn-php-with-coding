@@ -218,4 +218,13 @@ meaning you can access them inside functions or methods without needing to use t
   ?>
 ```
 
+### Object-Oriented Programming (OOP) in PHP
+
+// A programming paradigm that organizes code around objects rather than functions and logic. 
+It focuses on creating reusable, modular, and maintainable code. 
+
+#### Classes and Objects:
+
+// Encapsulation, Inheritance, Polymorphism, Abstraction
+
 
