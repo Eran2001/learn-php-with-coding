@@ -294,3 +294,32 @@ It focuses on creating reusable, modular, and maintainable code.
   $dog->eat();  // inherited
   $dog->bark(); // own method
 ```
+
+// Polymorphism - same method name, but different behavior depending on the object.
+
+```bash
+  class Animal {
+      public function makeSound() {
+          echo "Some sound";
+      }
+  }
+
+  class Dog extends Animal {
+      public function makeSound() {
+          echo "Woof!";
+      }
+  }
+
+  class Cat extends Animal {
+      public function makeSound() {
+          echo "Meow!";
+      }
+  }
+
+  function playSound(Animal $animal) {
+      $animal->makeSound();
+  }
+
+  playSound(new Dog()); // Woof!
+  playSound(new Cat()); // Meow!
+```
