@@ -10,6 +10,12 @@ applications.
 php -S localhost:8080
 ```
 
+### Strict Mode
+
+```bash
+declare(strict_types=1);
+```
+
 ### Variables
 
 ```bash
