@@ -233,4 +233,26 @@ It focuses on creating reusable, modular, and maintainable code.
 
 // Encapsulation, Inheritance, Polymorphism, Abstraction
 
-
+```bash
+  <?php
+  
+    declare(strict_types=1);
+  
+    class Vehicle
+    {
+      public string $vehicleName;
+      public string $vehicleColor;
+    
+      public function __construct(string $name, string $color) {
+        $this->vehicleName = $name;
+        $this->vehicleColor = $color;
+      }
+    
+      public function show(): string {
+        return "$this->vehicleName is perfect!, and it's $this->vehicleColor";
+      }
+    }
+  
+    $car = new Vehicle("Toyota", "red");
+    echo $car->show();
+```
