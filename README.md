@@ -274,3 +274,23 @@ It focuses on creating reusable, modular, and maintainable code.
   $user->setName("Eran");
   echo $user->getName(); // Output: Eran
 ```
+
+// Inheritance - one class extends another class and reuses its properties/methods.
+
+```bash
+  class Animal {
+      public function eat() {
+          echo "Eating...";
+      }
+  }
+
+  class Dog extends Animal {
+      public function bark() {
+          echo "Woof!";
+      }
+  }
+
+  $dog = new Dog();
+  $dog->eat();  // inherited
+  $dog->bark(); // own method
+```
