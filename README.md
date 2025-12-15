@@ -1,3 +1,12 @@
+# Case
+
+```bash
+   kebab case -> user-name
+   pascal case -> UserName
+   snake case -> user_name
+   camel case -> userName
+```
+
 # PHP
 
 PHP, which recursively stands for "PHP: Hypertext Preprocessor," is an open-source, server-side scripting language
